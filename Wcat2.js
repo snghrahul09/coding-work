@@ -4,9 +4,6 @@ let input = process.argv.slice(2);
 for(let i = 0 ; i < input.length ; i++){
     let path = input[i];
  
-
- console.log("Executed before file reading\n \n");
    let data = fs.readFileSync(path, 'utf8');
    console.log(data);
-    console.log(" \n \n Executed After file reading");
 }
